@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
+# Update the contents in the ci branch to get the test to pass. You need to look at the logs to see what caused the test to fail.
       - name: Run markdown lint
         run: |
           npm install remark-cli remark-preset-lint-consistent
